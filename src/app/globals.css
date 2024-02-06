@@ -24,6 +24,10 @@
     --sb-thumb-color: #aaa;
     --sb-size: 12px;
   }
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
 
 body::-webkit-scrollbar {

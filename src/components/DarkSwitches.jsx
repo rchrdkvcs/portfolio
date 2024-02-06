@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export const DarkSwitches = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [keyDown, setKeyDown] = useState(false);
 
   useEffect(() => {
     const localDarkMode = window.localStorage.getItem("darkMode");
@@ -23,9 +24,13 @@ export const DarkSwitches = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "m" || e.key === "M") {
+        setKeyDown(true);
         setDarkMode(!darkMode);
         window.localStorage.setItem("darkMode", !darkMode);
         document.documentElement.classList.toggle("dark");
+        setTimeout(() => {
+          setKeyDown(false);
+        }, 500);
       }
     };
 
@@ -44,7 +49,10 @@ export const DarkSwitches = () => {
         window.localStorage.setItem("darkMode", !darkMode);
         document.documentElement.classList.toggle("dark");
       }}>
-      <p className="px-2 border border-b-4 border-[#111] dark:border-[#aaa]">
+      <p
+        className={`px-2 border border-b-4 border-[#111] dark:border-[#aaa] ${
+          keyDown ? "dark-preset dark:white-preset border-b-0" : ""
+        }`}>
         M
       </p>
       <p>Light / Dark</p>

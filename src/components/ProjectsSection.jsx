@@ -10,10 +10,10 @@ import Link from "next/link";
 export const ProjectsSection = () => {
   return (
     <section className="flex flex-col w-full gap-16 scroll-mt-24" id="projects">
-      <h2 className="text-3xl">
+      <h2 className="text-2xl lg:text-3xl">
         {"->"} 2. <span className="font-bold">Projects</span> :
       </h2>
-      <div className="grid items-start justify-center grid-cols-3 gap-8 mt-8">
+      <div className="flex flex-col items-start justify-center grid-cols-3 gap-8 mt-8 lg:grid">
         <ProjectElement
           href="https://fivestars.b34r.fr"
           name="FiveStars"

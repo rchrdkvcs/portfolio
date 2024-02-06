@@ -3,7 +3,7 @@ export const ExpSection = () => {
     <section
       className="flex flex-col w-full gap-16 scroll-mt-24"
       id="experiences">
-      <h2 className="text-3xl">
+      <h2 className="text-2xl lg:text-3xl">
         {"->"} 3. <span className="font-bold">Experiences</span> :
       </h2>
       <div className="flex flex-col-reverse items-start justify-start gap-8">
@@ -44,11 +44,11 @@ export const ExpSection = () => {
 
 export const ExpElement = ({ date, title, desc }) => {
   return (
-    <div className="flex items-center justify-center gap-10">
-      <p className="text-md">{date}</p>
-      <div className="min-w-2 min-h-2 bg-[#111] dark:bg-[#aaa]"></div>
+    <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
+      <p className="text-lg lg:text-md">{date}</p>
+      <div className="min-w-2 min-h-2 bg-[#111] dark:bg-[#aaa] hidden lg:block"></div>
       <div className="flex flex-col items-start justify-start gap-0">
-        <h3 className="text-lg font-bold">{title}</h3>
+        <h3 className="text-lg font-bold ">{title}</h3>
         <p className="text-lg">{desc}</p>
       </div>
     </div>

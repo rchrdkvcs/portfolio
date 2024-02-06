@@ -10,13 +10,15 @@ import Image from "next/image";
 export const HomeSection = () => {
   return (
     <section
-      className="grid items-start justify-start grid-cols-3 mt-32 scroll-mt-24"
+      className="flex flex-col items-start justify-start w-full gap-6 mt-8 md:grid md:mt-16 lg:mt-32 md:grid-cols-3 scroll-mt-24"
       id="home">
-      <div className="flex flex-col col-span-2 gap-2">
+      <div className="flex flex-col col-span-2 gap-2 text-sm md:text-base">
         <p>Hey There ! {"I'm"} - </p>
         <h2 className="flex flex-col gap-0">
-          <span className="font-bold text-7xl">Richard</span>
-          <span className="font-bold text-9xl text-primary">Kovacs</span>
+          <span className="text-4xl font-bold md:text-7xl">Richard</span>
+          <span className="text-6xl font-bold md:text-9xl text-primary">
+            Kovacs
+          </span>
         </h2>
         <p>
           {"I'm"} a Full-Stack Junior Developer, with a passion for building
@@ -30,7 +32,7 @@ export const HomeSection = () => {
           width={2048}
           height={2048}
           priority
-          className="w-auto h-auto transition-all duration-300 ease-in-out rounded-full filter grayscale hover:filter-none hover:scale-110 hover:rotate-12 hover:shadow-2xl"
+          className="w-auto h-auto transition-all duration-300 ease-in-out filter grayscale hover:filter-none hover:scale-110 hover:rotate-12 hover:shadow-2xl"
         />
       </div>
       <div className="flex flex-wrap col-span-2 gap-2">

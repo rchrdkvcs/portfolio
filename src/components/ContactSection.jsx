@@ -9,12 +9,12 @@ import { Twitter } from "@/components/icones/Twitter";
 export const ContactSection = () => {
   return (
     <section className="flex flex-col w-full gap-16 scroll-mt-24" id="contact">
-      <h2 className="text-3xl">
+      <h2 className="text-2xl lg:text-3xl">
         {"->"} 3. <span className="font-bold">Contact</span> :
       </h2>
       <div className="flex flex-col items-center justify-center w-full gap-4">
         <p>Feel free to contact me by email or through my social networks.</p>
-        <div className="flex flex-wrap items-center justify-center w-full gap-4">
+        <div className="flex flex-wrap items-center w-full gap-4 justify-left md:justify-center">
           <ContactButton
             href="https://github.com/b34roff"
             icon={<Github />}
