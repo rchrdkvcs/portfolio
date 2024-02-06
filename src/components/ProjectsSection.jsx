@@ -23,7 +23,7 @@ export const ProjectsSection = () => {
           <ProjectTags icon={<Framer />} label="Framer Motion" />
         </ProjectElement>
         <ProjectElement
-          href="https://krem.b34r.fr"
+          href="https://pizza.b34r.fr"
           name="Krem Pizzéria"
           desc="Krem Pizzéria is a Hungarian restaurant for which I have created a presentation website with sections for 'About,' 'Menu,' and 'Contact.">
           <ProjectTags icon={<React />} label="React" />
