@@ -9,8 +9,8 @@ import Link from "next/link";
 
 export const ProjectsSection = () => {
   return (
-    <section className="flex flex-col w-full gap-16 scroll-mt-24" id="projects">
-      <h2 className="text-2xl lg:text-3xl">
+    <section className="flex flex-col w-full gap-16 min-h-screen justify-center items-center" id="projects">
+      <h2 className="text-2xl lg:text-3xl w-full">
         {"->"} 2. <span className="font-bold">Projects</span> :
       </h2>
       <div className="flex flex-col items-start justify-center grid-cols-3 gap-8 mt-8 lg:grid">

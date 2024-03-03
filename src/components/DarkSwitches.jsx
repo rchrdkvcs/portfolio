@@ -43,7 +43,7 @@ export const DarkSwitches = () => {
 
   return (
     <button
-      className="fixed bottom-0 left-0 z-50 flex items-center justify-center gap-2 p-2 text-sm cursor-pointer"
+      className="fixed bottom-0 left-0 z-50 lg:flex items-center justify-center gap-2 p-2 text-sm cursor-pointer hidden"
       onClick={() => {
         setDarkMode(!darkMode);
         window.localStorage.setItem("darkMode", !darkMode);

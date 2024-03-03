@@ -14,11 +14,11 @@ import { Vue } from "@/components/icones/Vue";
 
 export const SkillsSection = () => {
   return (
-    <section className="flex flex-col w-full gap-16 scroll-mt-24" id="skills">
-      <h2 className="text-2xl lg:text-3xl">
+    <section className="flex flex-col items-center justify-center w-full gap-16 min-h-screen" id="skills">
+      <h2 className="text-2xl lg:text-3xl w-full">
         {"->"} 1. <span className="font-bold">Skills</span> :
       </h2>
-      <div className="flex flex-col items-center justify-center grid-cols-2 grid-rows-2 gap-16 text-xl lg:grid">
+      <div className="flex flex-col items-center justify-center grid-cols-2 grid-rows-2 gap-16 text-xl lg:grid w-full">
         <div className="flex flex-col gap-6 mx-auto w-fit">
           <h3 className="text-2xl font-bold text-center">Front-end</h3>
           <ul>

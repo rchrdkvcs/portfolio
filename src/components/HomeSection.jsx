@@ -10,7 +10,7 @@ import Image from "next/image";
 export const HomeSection = () => {
   return (
     <section
-      className="flex flex-col items-start justify-start w-full gap-6 mt-8 md:grid md:mt-16 lg:mt-32 md:grid-cols-3 scroll-mt-24"
+      className="flex flex-col items-center justify-center w-full md:grid md:grid-cols-3 scroll-mt-24 min-h-screen gap-4"
       id="home">
       <div className="flex flex-col col-span-2 gap-2 text-sm md:text-base">
         <p>Hey There ! {"I'm"} - </p>
@@ -32,10 +32,10 @@ export const HomeSection = () => {
           width={2048}
           height={2048}
           priority
-          className="w-auto h-auto transition-all duration-300 ease-in-out filter grayscale hover:filter-none hover:scale-110 hover:rotate-12 hover:shadow-2xl"
+          className="w-auto h-auto rounded-3xl md:w-full md:h-full md:object-cover md:object-center"
         />
       </div>
-      <div className="flex flex-wrap col-span-2 gap-2">
+      <div className="flex flex-wrap col-span-3 gap-4 justify-start lg:justify-center items-center">
         <ContactButton
           href="https://github.com/b34roff"
           icon={<Github />}
@@ -52,9 +52,9 @@ export const HomeSection = () => {
           label="Linkedin"
         />
         <ContactButton
-          href="mailto:kovacs.richard@outlook.be"
+          href="mailto:contact@b34r.fr"
           icon={<Email />}
-          label="kovacs.richard@outlook.be"
+          label="contact@b34r.fr"
         />
         <ContactButton href="" icon={<Discord />} label="Discord" />
         <ContactButton

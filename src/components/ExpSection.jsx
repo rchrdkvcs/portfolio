@@ -1,9 +1,9 @@
 export const ExpSection = () => {
   return (
     <section
-      className="flex flex-col w-full gap-16 scroll-mt-24"
+      className="flex flex-col w-full gap-16 justify-center items-center min-h-screen scroll-mt-24"
       id="experiences">
-      <h2 className="text-2xl lg:text-3xl">
+      <h2 className="text-2xl lg:text-3xl w-full">
         {"->"} 3. <span className="font-bold">Experiences</span> :
       </h2>
       <div className="flex flex-col-reverse items-start justify-start gap-8">

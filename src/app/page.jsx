@@ -6,7 +6,7 @@ import { SkillsSection } from "@/components/SkillsSection";
 
 const Home = () => {
   return (
-    <main className="flex flex-col w-full gap-32 mb-32">
+    <main className="flex flex-col w-full gap-16 md:gap-8 lg:gap-0">
       <HomeSection />
       <SkillsSection />
       <ProjectsSection />
