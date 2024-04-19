@@ -3,17 +3,20 @@ import { Framer } from "@/components/icones/Framer";
 import { NextJs } from "@/components/icones/Next";
 import { Open } from "@/components/icones/Open";
 import { Postgresal } from "@/components/icones/Postgresql";
-import { React } from "@/components/icones/React";
 import { Tailwindcss } from "@/components/icones/Tailwindcss";
 import Link from "next/link";
+import { Adonis } from "../icones/Adonis";
+import { MarkDown } from "../icones/MarkDown";
 
 export const ProjectsSection = () => {
   return (
-    <section className="flex flex-col w-full gap-16 min-h-screen justify-center items-center" id="projects">
-      <h2 className="text-2xl lg:text-3xl w-full">
+    <section
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-16"
+      id="projects">
+      <h2 className="w-full text-2xl lg:text-3xl">
         {"->"} 2. <span className="font-bold">Projects</span> :
       </h2>
-      <div className="flex flex-col items-start justify-center grid-cols-3 gap-8 mt-8 lg:grid">
+      <div className="flex flex-col items-start justify-center grid-cols-3 gap-8 my-8 lg:grid">
         <ProjectElement
           href="https://fivestars.b34r.fr"
           name="FiveStars"
@@ -26,10 +29,10 @@ export const ProjectsSection = () => {
           href="https://pizza.b34r.fr"
           name="Krem Pizzéria"
           desc="Krem Pizzéria is a Hungarian restaurant for which I have created a presentation website with sections for 'About,' 'Menu,' and 'Contact.">
-          <ProjectTags icon={<React />} label="React" />
           <ProjectTags icon={<NextJs />} label="Next.Js" />
           <ProjectTags icon={<Tailwindcss />} label="Tailwind CSS" />
           <ProjectTags icon={<Figma />} label="Figma" />
+          <ProjectTags icon={<Framer />} label="Framer Motion" />
         </ProjectElement>
         <ProjectElement
           href="https://sapd.b34r.fr"
@@ -39,6 +42,13 @@ export const ProjectsSection = () => {
           <ProjectTags icon={<Postgresal />} label="Postgre SQL" />
           <ProjectTags icon={<Tailwindcss />} label="Tailwind CSS" />
           <ProjectTags icon={<Framer />} label="Framer Motion" />
+        </ProjectElement>
+        <ProjectElement
+          href="https://docs.b34r.fr/guides/introduction"
+          name="Action Docs"
+          desc="Action Docs is a documentation website about a GTA 5 RolePlay game server. Siteweb created with the AdonisJS 6 documentation site boilerplate. (In progress)">
+          <ProjectTags icon={<Adonis />} label="AdonisJS" />
+          <ProjectTags icon={<MarkDown />} label="Markdown" />
         </ProjectElement>
       </div>
     </section>

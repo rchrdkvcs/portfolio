@@ -1,8 +1,8 @@
-import { ContactSection } from "@/components/ContactSection";
-import { ExpSection } from "@/components/ExpSection";
-import { HomeSection } from "@/components/HomeSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
-import { SkillsSection } from "@/components/SkillsSection";
+import { ContactSection } from "@/components/section/ContactSection";
+import { ExpSection } from "@/components/section/ExpSection";
+import { HomeSection } from "@/components/section/HomeSection";
+import { ProjectsSection } from "@/components/section/ProjectsSection";
+import { SkillsSection } from "@/components/section/SkillsSection";
 
 const Home = () => {
   return (
