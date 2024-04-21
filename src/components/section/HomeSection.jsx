@@ -10,21 +10,21 @@ import Image from "next/image";
 export const HomeSection = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center w-full md:grid md:grid-cols-3 scroll-mt-24 min-h-screen gap-4"
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-4 md:grid md:grid-cols-3 scroll-mt-24"
       id="home">
-      <div className="flex flex-col col-span-2 gap-2 text-sm md:text-base">
+      <h1 className="flex flex-col col-span-2 gap-2 text-sm md:text-base">
         <p>Hey There ! {"I'm"} - </p>
-        <h2 className="flex flex-col gap-0">
+        <p className="flex flex-col gap-0">
           <span className="text-4xl font-bold md:text-7xl">Richard</span>
           <span className="text-6xl font-bold md:text-9xl text-primary">
             Kovacs
           </span>
-        </h2>
+        </p>
         <p>
           {"I'm"} a Full-Stack Junior Developer, with a passion for building
           applications and websites.
         </p>
-      </div>
+      </h1>
       <div>
         <Image
           src="/images/photo.png"
@@ -35,7 +35,7 @@ export const HomeSection = () => {
           className="w-auto h-auto rounded-3xl md:w-full md:h-full md:object-cover md:object-center"
         />
       </div>
-      <div className="flex flex-wrap col-span-3 gap-4 justify-start lg:justify-center items-center">
+      <div className="flex flex-wrap items-center justify-start col-span-3 gap-4 lg:justify-center">
         <ContactButton
           href="https://github.com/b34roff"
           icon={<Github />}
