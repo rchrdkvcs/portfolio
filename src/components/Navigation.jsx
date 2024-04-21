@@ -92,7 +92,7 @@ export const Navigation = () => {
           alt="Photo de Richard"
           width={2048}
           height={2048}
-          className="w-10 h-10 lg:h-12 lg:w-12 rounded-full"
+          className="w-10 h-10 rounded-full lg:h-12 lg:w-12"
         />
 
         <ul className="items-center justify-center hidden gap-4 lg:flex md:text-sm lg:text-base">

@@ -13,17 +13,13 @@ export const HomeSection = () => {
       className="flex flex-col items-center justify-center w-full min-h-screen gap-4 md:grid md:grid-cols-3 scroll-mt-24"
       id="home">
       <h1 className="flex flex-col col-span-2 gap-2 text-sm md:text-base">
-        <p>Hey There ! {"I'm"} - </p>
-        <p className="flex flex-col gap-0">
-          <span className="text-4xl font-bold md:text-7xl">Richard</span>
-          <span className="text-6xl font-bold md:text-9xl text-primary">
-            Kovacs
-          </span>
-        </p>
-        <p>
-          {"I'm"} a Full-Stack Junior Developer, with a passion for building
-          applications and websites.
-        </p>
+        Hey There ! {"I'm"} -
+        <span className="text-4xl font-bold md:text-7xl">Richard</span>
+        <span className="text-6xl font-bold md:text-9xl text-primary">
+          Kovacs
+        </span>
+        {"I'm"} a Full-Stack Junior Developer, with a passion for building
+        applications and websites.
       </h1>
       <div>
         <Image
