@@ -43,7 +43,7 @@ export const HomeSection = () => {
           label="Twitter"
         />
         <ContactButton
-          href="https://www.linkedin.com/in/richard-kovacs-dev-web/"
+          href="https://www.linkedin.com/in/richardkov/"
           icon={<Linkedin />}
           label="Linkedin"
         />

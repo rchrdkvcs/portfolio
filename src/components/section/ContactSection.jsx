@@ -8,11 +8,13 @@ import { Twitter } from "@/components/icones/Twitter";
 
 export const ContactSection = () => {
   return (
-    <section className="flex flex-col w-full gap-16 justify-center items-center min-h-screen" id="contact">
-      <h2 className="text-2xl lg:text-3xl w-full">
+    <section
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-16"
+      id="contact">
+      <h2 className="w-full text-2xl lg:text-3xl">
         {"->"} 3. <span className="font-bold">Contact</span> :
       </h2>
-      <div className="flex flex-col items-center justify-between w-full gap-4 h-full">
+      <div className="flex flex-col items-center justify-between w-full h-full gap-4">
         <p>Feel free to contact me by email or through my social networks.</p>
         <div className="flex flex-wrap items-center w-full gap-4 justify-left md:justify-center">
           <ContactButton
@@ -26,7 +28,7 @@ export const ContactSection = () => {
             label="Twitter"
           />
           <ContactButton
-            href="https://www.linkedin.com/in/richard-kovacs-dev-web/"
+            href="https://www.linkedin.com/in/richardkov/"
             icon={<Linkedin />}
             label="Linkedin"
           />
