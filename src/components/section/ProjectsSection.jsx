@@ -35,10 +35,10 @@ export const ProjectsSection = () => {
           <ProjectTags icon={<Framer />} label="Framer Motion" />
         </ProjectElement>
         <ProjectElement
-          href="https://sapd.b34r.fr"
-          name="SAPD"
-          desc="A complex web application for a fictional police service, featuring patrol unit management, administrative panel, report writing, and many other functionalities. (In progress)">
-          <ProjectTags icon={<NextJs />} label="Next.Js" />
+          href="https://github.com/b34roff/StreamBoard"
+          name="Stream Board"
+          desc="Stream Board is a simple way to create FaQ overlay for streaming. It is a web application that allows you to display questions and answers on your stream after added it to the dashboard. (Not hosted yet)">
+          <ProjectTags icon={<Adonis />} label="AdonisJS" />
           <ProjectTags icon={<Postgresal />} label="Postgre SQL" />
           <ProjectTags icon={<Tailwindcss />} label="Tailwind CSS" />
           <ProjectTags icon={<Framer />} label="Framer Motion" />

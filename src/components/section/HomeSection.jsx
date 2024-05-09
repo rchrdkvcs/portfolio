@@ -1,3 +1,5 @@
+"use client";
+
 import { ContactButton } from "@/components/ContactButton";
 import { Attach } from "@/components/icones/Attach";
 import { Discord } from "@/components/icones/Discord";
@@ -5,6 +7,7 @@ import { Email } from "@/components/icones/Email";
 import { Github } from "@/components/icones/Github";
 import { Linkedin } from "@/components/icones/Linkedin";
 import { Twitter } from "@/components/icones/Twitter";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export const HomeSection = () => {
@@ -28,10 +31,14 @@ export const HomeSection = () => {
           width={2048}
           height={2048}
           priority
-          className="w-auto h-auto rounded-3xl md:w-full md:h-full md:object-cover md:object-center"
+          className="w-auto h-auto rounded-lg shadow-2xl dark:shadow-[#111] shadow-[#aaa] md:w-full md:h-full md:object-cover md:object-center md:rotate-6"
         />
       </div>
-      <div className="flex flex-wrap items-center justify-start col-span-3 gap-4 lg:justify-center">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
+        className="flex flex-wrap items-center justify-start col-span-3 gap-4 lg:justify-center">
         <ContactButton
           href="https://github.com/b34roff"
           icon={<Github />}
@@ -59,7 +66,7 @@ export const HomeSection = () => {
           icon={<Attach />}
           label="Resume"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
