@@ -33,9 +33,9 @@ export const ContactSection = () => {
             label="Linkedin"
           />
           <ContactButton
-            href="mailto:kovacs.richard@outlook.be"
+            href="mailto:hello@richardkovacs.fr"
             icon={<Email />}
-            label="kovacs.richard@outlook.be"
+            label="hello@richardkovacs.fr"
           />
           <ContactButton href="" icon={<Discord />} label="Discord" />
           <ContactButton

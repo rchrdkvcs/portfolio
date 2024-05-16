@@ -55,9 +55,9 @@ export const HomeSection = () => {
           label="Linkedin"
         />
         <ContactButton
-          href="mailto:contact@b34r.fr"
+          href="mailto:hello@richardkovacs.fr"
           icon={<Email />}
-          label="contact@b34r.fr"
+          label="hello@richardkovacs.fr"
         />
         <ContactButton href="" icon={<Discord />} label="Discord" />
         <ContactButton

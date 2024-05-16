@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -74,7 +75,11 @@ export const Navigation = () => {
   }, [keyDown, router]);
 
   return (
-    <header className="fixed top-0 left-0 z-50 flex flex-col w-full">
+    <motion.header
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="fixed top-0 left-0 z-50 flex flex-col w-full">
       <nav
         className={`flex items-center justify-between w-full px-4 py-2 md:px-16 lg:px-32 xl:px-64 ${
           scroll
@@ -140,6 +145,6 @@ export const Navigation = () => {
           </ul>
         </nav>
       )}
-    </header>
+    </motion.header>
   );
 };
