@@ -11,14 +11,17 @@ import { Tailwindcss } from "@/components/icones/Tailwindcss";
 import { Typescript } from "@/components/icones/Typescript";
 import { Vercel } from "@/components/icones/Vercel";
 import { Vue } from "@/components/icones/Vue";
+import { MdiDocker } from "../icones/Docker";
 
 export const SkillsSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full gap-16 min-h-screen" id="skills">
-      <h2 className="text-2xl lg:text-3xl w-full">
+    <section
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-16"
+      id="skills">
+      <h2 className="w-full text-2xl lg:text-3xl">
         {"->"} 1. <span className="font-bold">Skills</span> :
       </h2>
-      <div className="flex flex-col items-center justify-center grid-cols-2 grid-rows-2 gap-16 text-xl lg:grid w-full">
+      <div className="flex flex-col items-center justify-center w-full grid-cols-2 grid-rows-2 gap-16 text-xl lg:grid">
         <div className="flex flex-col gap-6 mx-auto w-fit">
           <h3 className="text-2xl font-bold text-center">Front-end</h3>
           <ul>
@@ -50,6 +53,7 @@ export const SkillsSection = () => {
           <ul className="text-center">
             <Li icon={<Github />} label="Git & Github" />
             <Li icon={<Vercel />} label="Vercel" />
+            <Li icon={<MdiDocker />} label="Docker" />
           </ul>
         </div>
       </div>
