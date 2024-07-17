@@ -7,6 +7,8 @@ import { Tailwindcss } from "@/components/icones/Tailwindcss";
 import Link from "next/link";
 import { Adonis } from "../icones/Adonis";
 import { MarkDown } from "../icones/MarkDown";
+import { React } from "../icones/React";
+import { UnoCss } from "../icones/UnoCss";
 
 export const ProjectsSection = () => {
   return (
@@ -18,15 +20,27 @@ export const ProjectsSection = () => {
       </h2>
       <div className="flex flex-col items-start justify-center grid-cols-3 gap-8 my-8 lg:grid">
         <ProjectElement
-          href="https://fivestars.b34r.fr"
-          name="FiveStars"
-          desc="A simple showcase website for a GTA 5 RolePlay game server, featuring a clean and modern design. In the future, I am going to implement more functionality to create a questionnaire for Whitelist.">
-          <ProjectTags icon={<NextJs />} label="Next.Js" />
+          href="https://streamboard.b34r.fr"
+          name="Stream Board"
+          desc="Stream Board is a simple way to create FaQ overlay for streaming. It is a web application that allows you to display questions and answers on your stream after added it to the dashboard.">
+          <ProjectTags icon={<Adonis />} label="AdonisJS" />
+          <ProjectTags icon={<Postgresal />} label="Postgre SQL" />
           <ProjectTags icon={<Tailwindcss />} label="Tailwind CSS" />
           <ProjectTags icon={<Framer />} label="Framer Motion" />
         </ProjectElement>
+
         <ProjectElement
-          href="https://pizza.b34r.fr"
+          href="https://docs.b34r.fr"
+          name="Docs Site"
+          desc="Control Docs is a documentation website about a GTA 5 RolePlay game server. Siteweb created with AdonisJS 6 and Inertia (React)">
+          <ProjectTags icon={<Adonis />} label="AdonisJS" />
+          <ProjectTags icon={<React />} label="React" />
+          <ProjectTags icon={<MarkDown />} label="Markdown" />
+          <ProjectTags icon={<UnoCss />} label="Uno CSS" />
+        </ProjectElement>
+
+        <ProjectElement
+          href="https://krem.b34r.fr"
           name="Krem Pizzéria"
           desc="Krem Pizzéria is a Hungarian restaurant for which I have created a presentation website with sections for 'About,' 'Menu,' and 'Contact.">
           <ProjectTags icon={<NextJs />} label="Next.Js" />
@@ -34,21 +48,14 @@ export const ProjectsSection = () => {
           <ProjectTags icon={<Figma />} label="Figma" />
           <ProjectTags icon={<Framer />} label="Framer Motion" />
         </ProjectElement>
+
         <ProjectElement
-          href="https://github.com/b34roff/StreamBoard"
-          name="Stream Board"
-          desc="Stream Board is a simple way to create FaQ overlay for streaming. It is a web application that allows you to display questions and answers on your stream after added it to the dashboard. (Not hosted yet)">
-          <ProjectTags icon={<Adonis />} label="AdonisJS" />
-          <ProjectTags icon={<Postgresal />} label="Postgre SQL" />
+          href="https://fivestars.b34r.fr"
+          name="FiveStars"
+          desc="A simple showcase website for a GTA 5 RolePlay game server, featuring a clean and modern design. In the future, I am going to implement more functionality to create a questionnaire for Whitelist.">
+          <ProjectTags icon={<NextJs />} label="Next.Js" />
           <ProjectTags icon={<Tailwindcss />} label="Tailwind CSS" />
           <ProjectTags icon={<Framer />} label="Framer Motion" />
-        </ProjectElement>
-        <ProjectElement
-          href="https://docs.b34r.fr/guides/introduction"
-          name="Action Docs"
-          desc="Action Docs is a documentation website about a GTA 5 RolePlay game server. Siteweb created with the AdonisJS 6 documentation site boilerplate. (In progress)">
-          <ProjectTags icon={<Adonis />} label="AdonisJS" />
-          <ProjectTags icon={<MarkDown />} label="Markdown" />
         </ProjectElement>
       </div>
     </section>
