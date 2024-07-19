@@ -46,7 +46,7 @@ export const ExpElement = ({ date, title, desc }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
       <p className="text-lg lg:text-md">{date}</p>
-      <div className="min-w-2 min-h-2 bg-[#111] dark:bg-[#aaa] hidden lg:block"></div>
+      <div className="min-w-2 min-h-2 bg-[#111] dark:bg-[#FAF6F3] hidden lg:block"></div>
       <div className="flex flex-col items-start justify-start gap-0">
         <h3 className="text-lg font-bold ">{title}</h3>
         <p className="text-lg">{desc}</p>

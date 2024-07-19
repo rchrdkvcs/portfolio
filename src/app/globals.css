@@ -1,19 +1,10 @@
-@font-face {
-  font-family: "CommitMono";
-  src: url("../assets/fonts/CommitMono-400-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "CommitMono-Bold";
-  src: url("../assets/fonts/CommitMono-700-Regular.ttf") format("truetype");
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
   .white-preset {
-    @apply bg-[#aaa] text-[#111];
+    @apply bg-[#FAF6F3] text-[#111];
     --sb-track-color: rgba(0, 0, 0, 0.25);
     --sb-thumb-color: #111111;
     --sb-size: 12px;

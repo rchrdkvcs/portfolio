@@ -1,14 +1,12 @@
 "use client";
 
-import { ContactButton } from "@/components/ContactButton";
 import { Attach } from "@/components/icones/Attach";
-import { Discord } from "@/components/icones/Discord";
 import { Email } from "@/components/icones/Email";
 import { Github } from "@/components/icones/Github";
 import { Linkedin } from "@/components/icones/Linkedin";
-import { Twitter } from "@/components/icones/Twitter";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { SecondaryButton } from "../buttons/SecondaryButton";
 
 export const HomeSection = () => {
   return (
@@ -39,28 +37,25 @@ export const HomeSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.3 }}
         className="flex flex-wrap items-center justify-start col-span-3 gap-4 lg:justify-center">
-        <ContactButton
-          href="https://github.com/b34roff"
-          icon={<Github />}
-          label="Github"
-        />
-        <ContactButton
-          href="https://twitter.com/b34r_rk"
-          icon={<Twitter />}
-          label="Twitter"
-        />
-        <ContactButton
+        <SecondaryButton
           href="https://www.linkedin.com/in/richardkov/"
           icon={<Linkedin />}
           label="Linkedin"
         />
-        <ContactButton
+
+        <SecondaryButton
+          href="https://github.com/b34roff"
+          icon={<Github />}
+          label="Github"
+        />
+
+        <SecondaryButton
           href="mailto:hello@richardkovacs.fr"
           icon={<Email />}
           label="hello@richardkovacs.fr"
         />
-        <ContactButton href="" icon={<Discord />} label="Discord" />
-        <ContactButton
+
+        <SecondaryButton
           download
           href="/CV_KOVACS_Richard_DEV.pdf"
           icon={<Attach />}

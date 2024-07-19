@@ -64,7 +64,7 @@ export const ProjectsSection = () => {
 
 export const ProjectElement = ({ href, name, desc, children }) => {
   return (
-    <div className="flex flex-col gap-6 border border-[#111] dark:border-[#aaa] p-4 h-full">
+    <div className="flex flex-col gap-6 border border-fg-1 p-4 h-full">
       <div className="flex items-center justify-between">
         <h3 className="text-2xl">{name}</h3>
         <Link
@@ -85,7 +85,7 @@ export const ProjectElement = ({ href, name, desc, children }) => {
 
 export const ProjectTags = ({ icon, label }) => {
   return (
-    <div className="flex items-center justify-center gap-2 px-2 py-1 text-xs rounded-full dark:white-preset dark-preset">
+    <div className="flex items-center justify-center gap-2 px-2 py-1 text-xs rounded-full bg-bg-2">
       <span className="text-sm">{icon}</span>
       {label}
     </div>
