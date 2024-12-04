@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import "@unocss/reset/tailwind.css";
+</script>
+
 <template>
-  <h1>Hello world</h1>
+  <h1 class="bg-red">hello</h1>
 </template>
